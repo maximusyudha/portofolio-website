@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import { fillOut, slideInFromLeft } from "@/utils/motion";
 
 interface Props {
   src: string;
@@ -9,7 +12,12 @@ interface Props {
 
 const ProjectCard = ({ src, title, description }: Props) => {
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
+    <motion.div
+      className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]"
+      variants={fillOut}
+      initial="hidden"
+      animate="visible"
+    >
       <Image
         src={src}
         alt={title}
@@ -19,12 +27,17 @@ const ProjectCard = ({ src, title, description }: Props) => {
       />
 
       <div className="relative p-4">
-        <h1 className="text-2xl font-semibold text-white">{title}</h1>
-        <p className="mt-2 mb-4 text-gray-300">{description}</p>
+        <motion.h1
+          className="text-2xl font-semibold text-white"
+          variants={fillOut}
+        >
+          {title}
+        </motion.h1>
+        <motion.p className="mt-2 mb-4 text-gray-300" variants={fillOut}>
+          {description}
+        </motion.p>
       </div>
-
-    
-    </div>
+    </motion.div>
   );
 };
 
