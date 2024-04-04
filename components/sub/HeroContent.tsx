@@ -20,7 +20,7 @@ const HeroContent = () => {
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+          className="Welcome-box flex py-[8px] px-[2px] rounded-lg w-[210px] border border-[#7042f88b] opacity-[0.9]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px] text-white">
@@ -50,6 +50,7 @@ const HeroContent = () => {
           specially on react. Check out my projects and skills.
         </motion.p>
         <motion.a
+          href="https://www.linkedin.com/in/maximus-yudha-prasetyo-75b423220/"
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] border hover:bg-gradient-to-r from-purple-500 to-cyan-500"
         >
