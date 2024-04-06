@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React from "react";
 import { motion } from "framer-motion";
 import {
@@ -9,6 +8,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import GitHub and LinkedIn icons
 
 const AboutContent = () => {
   return (
@@ -52,13 +52,31 @@ const AboutContent = () => {
           technology has had on the world.
         </motion.p>
 
-        <motion.a
-          href="/"
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] border hover:bg-gradient-to-r from-purple-500 to-cyan-500"
-        >
-          Home
-        </motion.a>
+        <div className="flex gap-4">
+          <motion.a
+            href="/"
+            variants={slideInFromLeft(1)}
+            className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] border hover:bg-gradient-to-r from-purple-500 to-cyan-500"
+          >
+            Home
+          </motion.a>
+          <motion.a
+            variants={slideInFromLeft(1)}
+            href="https://github.com/maximusyudha"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="text-white h-8 w-8 hover:text-gray-300" />
+          </motion.a>
+          <motion.a
+            variants={slideInFromLeft(1)}
+            href="https://www.linkedin.com/in/maximus-yudha-prasetyo-75b423220/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="text-white h-8 w-8 hover:text-gray-300" />
+          </motion.a>
+        </div>
       </div>
 
       <motion.div
