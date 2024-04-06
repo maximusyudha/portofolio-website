@@ -4,7 +4,7 @@ const timeline = [
   {
     id: 1,
     content: "Internship",
-    target: "Front End Developer at Suretubond.co.id",
+    target: "Front End Developer at Suretybond.co.id",
     href: "#",
     date: "Jun 2023 - Sep 2023",
     datetime: "Jun 2023 - Sep 2023",

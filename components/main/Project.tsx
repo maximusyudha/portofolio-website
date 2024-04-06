@@ -15,17 +15,17 @@ const Projects = () => {
         <ProjectCard
           src="/perkotaanIo.png"
           title="Perkotaan.Io"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="Real Estate Website with update design and clear user experience"
         />
         <ProjectCard
           src="/anime.png"
           title="MxAnimelist"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="Anime list adaptation of the MyAnimelist website"
         />
         <ProjectCard
           src="/pln.png"
           title="PLN Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="'State Electricity Company', abbreviated as PLN) is an Indonesian government-owned corporation which has a monopoly on electric power distribution in Indonesia and generates the majority of the country's electrical power, producing 176.4 TWh in 2015."
         />
       </div>
     </div>
