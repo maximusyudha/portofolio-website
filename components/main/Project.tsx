@@ -25,7 +25,7 @@ const Projects = () => {
         <ProjectCard
           src="/pln.png"
           title="PLN Website"
-          description="'PLN city service Website"
+          description="PLN city service website from State Electricity Company"
         />
       </div>
     </div>
