@@ -28,7 +28,7 @@ const AboutContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
             Maximus
@@ -63,7 +63,7 @@ const AboutContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center border rounded-lg bg-transparent"
+        className="hidden md:w-full md:h-full md:flex md:justify-center md:items-center md:border rounded-lg bg-transparent"
       >
         <Image src="/yudha.png" alt="work icons" height={650} width={380} />
       </motion.div>

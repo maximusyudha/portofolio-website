@@ -1,8 +1,4 @@
-import {
-  CheckIcon,
-  HandThumbUpIcon,
-  UserIcon,
-} from "@heroicons/react/20/solid";
+import { UserIcon } from "@heroicons/react/20/solid";
 
 const timeline = [
   {
@@ -27,7 +23,7 @@ const timeline = [
   },
 ];
 
-function classNames(...classes:any[]):string {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -40,12 +36,12 @@ const WorkExp = () => {
             <div className="relative pb-8">
               {eventIdx !== timeline.length - 1 ? (
                 <span
-                  className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
+                  className="absolute top-4 left-7 h-full w-0.5 bg-gray-200"
                   aria-hidden="true"
                 />
               ) : null}
-              <div className="relative flex space-x-3">
-                <div>
+              <div className="relative flex flex-col sm:flex-row sm:items-center space-x-0 sm:space-x-3">
+                <div className="ml-4 mb-3 sm:mb-0 flex items-center space-x-4">
                   <span
                     className={classNames(
                       event.iconBackground,
@@ -57,8 +53,6 @@ const WorkExp = () => {
                       aria-hidden="true"
                     />
                   </span>
-                </div>
-                <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                   <div>
                     <p className="text-sm text-gray-500">
                       {event.content}{" "}
@@ -70,7 +64,9 @@ const WorkExp = () => {
                       </a>
                     </p>
                   </div>
-                  <div className="whitespace-nowrap text-right text-sm text-gray-500">
+                </div>
+                <div className="flex-1 sm:min-w-0 sm:flex-grow justify-between">
+                  <div className="whitespace-nowrap text-right text-sm text-gray-500 mr-3">
                     <time dateTime={event.datetime}>{event.date}</time>
                   </div>
                 </div>
@@ -81,6 +77,6 @@ const WorkExp = () => {
       </ul>
     </div>
   );
-}
+};
 
 export default WorkExp;
