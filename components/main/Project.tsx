@@ -25,7 +25,7 @@ const Projects = () => {
         <ProjectCard
           src="/pln.png"
           title="PLN Website"
-          description="'State Electricity Company', abbreviated as PLN) is an Indonesian government-owned corporation which has a monopoly on electric power distribution in Indonesia and generates the majority of the country's electrical power, producing 176.4 TWh in 2015."
+          description="'PLN city service Website"
         />
       </div>
     </div>
