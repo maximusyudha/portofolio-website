@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { fillOut, slideInFromLeft } from "@/utils/motion";
+import { useScrollSlideInFromBottom } from "@/utils/motion";
 
 interface Props {
   src: string;
@@ -11,10 +12,12 @@ interface Props {
 }
 
 const SkillsCard = ({ src, title }: Props) => {
+  const { ref, animation } = useScrollSlideInFromBottom();
   return (
     <motion.div
+      ref={ref}
+      variants={animation}
       className="relative overflow-hidden"
-      variants={fillOut}
       initial="hidden"
       animate="visible"
     >

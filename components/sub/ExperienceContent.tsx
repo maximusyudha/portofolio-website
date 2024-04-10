@@ -1,4 +1,7 @@
+"use client";
 import { UserIcon } from "@heroicons/react/20/solid";
+import { motion } from "framer-motion";
+import { useScrollSlideInFromBottom } from "@/utils/motion";
 
 const timeline = [
   {

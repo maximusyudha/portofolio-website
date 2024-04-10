@@ -1,3 +1,28 @@
+
+import { useInView } from 'react-intersection-observer';
+
+export function useScrollSlideInFromBottom() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const animation = {
+    hidden: { y: 100, opacity: 0 },
+    visible: inView ? {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    } : {},
+  };
+
+  return { ref, animation };
+}
+
+
+
 export function slideInFromLeft(delay: number) {
   return {
     hidden: { x: -100, opacity: 0 },
