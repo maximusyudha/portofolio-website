@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import {
@@ -54,13 +54,6 @@ const AboutContent = () => {
 
         <div className="flex gap-4">
           <motion.a
-            href="/"
-            variants={slideInFromLeft(1)}
-            className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] border hover:bg-gradient-to-r from-purple-500 to-cyan-500"
-          >
-            Home
-          </motion.a>
-          <motion.a
             variants={slideInFromLeft(1)}
             href="https://github.com/maximusyudha"
             target="_blank"
@@ -81,9 +74,15 @@ const AboutContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="hidden md:w-full md:h-full md:flex md:justify-center md:items-center md:border rounded-lg bg-transparent"
+        className="hidden md:w-full md:h-full md:flex md:justify-center md:items-center md:border-4 md:border-dashed border-purple-600 rounded-lg bg-transparent"
       >
-        <Image src="/yudha.png" alt="work icons" height={650} width={380} />
+        <Image
+          src="/yudha.png"
+          alt="work icons"
+          height={650}
+          width={380}
+          className="shadow-lg shadow-cyan-500/50"
+        />
       </motion.div>
     </motion.div>
   );

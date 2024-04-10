@@ -17,7 +17,7 @@ const Navbar = () => {
             <div>
               <a
                 href="/"
-                className="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"
+                className="flex items-center py-5 px-2 text-gray-700 hover:text-purple-900"
               >
                 <svg
                   className="h-6 w-6 mr-1 text-blue-400"
@@ -38,20 +38,20 @@ const Navbar = () => {
             </div>
             <div className="hidden md:flex items-center space-x-1">
               <a
+                href="/"
+                className="py-5 px-3 text-gray-700 hover:text-purple-900"
+              >
+                Home
+              </a>
+              <a
                 href="/About"
-                className="py-5 px-3 text-gray-700 hover:text-gray-900"
+                className="py-5 px-3 text-gray-700 hover:text-purple-900"
               >
                 About
               </a>
               <a
-                href="/services"
-                className="py-5 px-3 text-gray-700 hover:text-gray-900"
-              >
-                Services
-              </a>
-              <a
-                href="/contact"
-                className="py-5 px-3 text-gray-700 hover:text-gray-900"
+                href="/"
+                className="py-5 px-3 text-gray-700 hover:text-purple-900"
               >
                 Contact
               </a>
