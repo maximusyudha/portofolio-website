@@ -16,7 +16,7 @@ const ProjectCard = ({ src, title, description }: Props) => {
   return (
     <motion.div
       ref={ref} 
-      className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]"
+      className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] w-[1348px] h-[300px]"
       variants={animation} 
       initial="hidden"
       animate="visible"

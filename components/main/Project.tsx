@@ -5,7 +5,7 @@ import ProjectCard from "../sub/ProjectContent";
 const Projects = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center py-20"
+      className="flex flex-col items-center justify-center py-48"
       id="projects"
     >
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
@@ -22,7 +22,7 @@ const Projects = () => {
           title="MxAnimelist"
           description="Anime list adaptation of the MyAnimelist website"
         />
-        <ProjectCard
+        <ProjectCard 
           src="/pln.png"
           title="PLN Website"
           description="PLN city service website from State Electricity Company"
